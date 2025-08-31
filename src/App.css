@@ -362,12 +362,16 @@ body {
 }
 
 .bottom-section {
+      text-align: left;
+
   display: flex;
   margin: 20px 30px;
   gap: 30px;
 }
 
 .bank-details {
+      text-align: left;
+
   flex: 2;
 }
 
@@ -379,12 +383,16 @@ body {
 }
 
 .bank-details-content {
+      text-align: left;
+
   font-size: 12px;
   line-height: 1.6;
   color: #374151;
 }
 
 .bank-details-content strong {
+      text-align: left;
+
   color: #111827;
   font-weight: 600;
 }

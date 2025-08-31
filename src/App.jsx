@@ -488,6 +488,10 @@ const App = () => {
               </div>
             </div>
           </div>
+          <div className="amount-words">
+            <strong>Amount in Words:</strong>{" "}
+            {numberToWords(calculateGrandTotal())}
+          </div>
         </div>
         <div className="summary-right">
           <div className="summary-box">
@@ -525,65 +529,63 @@ const App = () => {
               </div>
             </div>
           </div>
+          <div className="bottom-section" style={{ textAlign: "left" }}>
+            <div className="bank-details">
+              <h4>Bank Details</h4>
+              <div className="bank-details-content">
+                <strong>Bank Name:</strong> HDFC Bank Ltd.
+                <br />
+                <strong>Account Holder Name:</strong> Meher Exports
+                <br />
+                <strong>Account No:</strong> 50100123456789
+                <br />
+                <strong>IFSC Code:</strong> HDFC0001234
+                <br />
+                <strong>Branch:</strong> Sector 14, Gurgaon
+                <br />
+                <strong>UPI ID:</strong> meherexports@hdfcbank
+              </div>
+            </div>
+            <div className="qr-section">
+              <div className="qr-code">
+                <div className="qr-pattern"></div>
+              </div>
+              <div className="qr-label">Scan to Pay</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="amount-words">
-        <strong>Amount in Words:</strong> {numberToWords(calculateGrandTotal())}
-      </div>
-
-      <div className="bottom-section">
-        <div className="bank-details">
-          <h4>Bank Details</h4>
-          <div className="bank-details-content">
-            <strong>Bank Name:</strong> HDFC Bank Ltd.
+      <div class="footer-section">
+        <div class="terms">
+          <h4>Terms & Conditions:</h4>
+          <div class="terms-content">
+            1. E & O.E
             <br />
-            <strong>Account Holder Name:</strong> Meher Exports
+            2. Goods once sold will not be taken back.
             <br />
-            <strong>Account No:</strong> 50100123456789
+            3. Interest @ 18% p.a. will be charged if the payment is not made
             <br />
-            <strong>IFSC Code:</strong> HDFC0001234
+            within the stipulated time.
             <br />
-            <strong>Branch:</strong> Sector 14, Gurgaon
+            4. All disputes are subject to "Indore, Madhya Pradesh" Jurisdiction
             <br />
-            <strong>UPI ID:</strong> meherexports@hdfcbank
+            only.
+            <br />
+            5. Returns accepted only within 7 days of delivery with original
+            <br />
+            packaging.
           </div>
         </div>
-        <div className="qr-section">
-          <div className="qr-code">
-            <div className="qr-pattern"></div>
+        <div class="signature">
+          <h4>Receiver's Signature:</h4>
+          <div class="terms-note">
+            **We hereby confirm that we have reviewed the goods as per the
+            invoice.
           </div>
-          <div className="qr-label">Scan to Pay</div>
-        </div>
-      </div>
-
-      <div className="footer-section">
-        <div className="terms">
-          <h4>Terms & Conditions</h4>
-          <div className="terms-content">
-            1. Payment due within 30 days from the date of invoice.
-            <br />
-            2. Interest @ 24% per annum will be charged on delayed payments.
-            <br />
-            3. Subject to Gurgaon Jurisdiction only.
-            <br />
-            4. Goods once sold will not be taken back.
-            <br />
-            5. Delivery subject to strikes, accidents & other unforeseen
-            circumstances.
-            <br />
-            6. All disputes are subject to Gurgaon jurisdiction only.
-          </div>
-          <div className="terms-note">
-            This is a computer generated invoice and does not require physical
-            signature.
-          </div>
-          <div className="company-signature">For Meher Exports</div>
-        </div>
-        <div className="signature">
-          <h4>Authorized Signatory</h4>
-          <div className="signature-area"></div>
-          <div className="signature-label">Signature & Stamp</div>
+          <div class="company-signature">For MAHAKALI ETHNIC COLLECTION</div>
+          <div class="signature-area"></div>
+          <div class="signature-label">Authorised Signatory</div>
         </div>
       </div>
 
